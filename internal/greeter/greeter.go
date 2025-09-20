@@ -1,6 +1,9 @@
 package greeter
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // Hello returns a greeting line (exported)
 func Hello(name string) string {
@@ -19,4 +22,14 @@ func Welcome(product string, discount int) string {
 		discount = 0
 	}
 	return fmt.Sprintf("Ласкаво просимо! Знижка на %s = %d%%", product, discount)
+}
+
+func HelloAll(names []string) string {
+	str := ""
+	if names == nil {
+		str = "world"  
+	} else {
+		str = strings.Join(names, ", ")
+	}
+	return fmt.Sprintf("Hello, %s!", str) 
 }

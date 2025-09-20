@@ -15,4 +15,8 @@ func main() {
 
 	fmt.Println(greeter.Hello(name))
 	fmt.Println(greeter.Welcome("кросівки", 45))
+	fmt.Println(greeter.HelloAll([]string{"Ana"}))
+	fmt.Println(greeter.HelloAll([]string{"Ana","Bob"}))
+	fmt.Println(greeter.HelloAll(nil))
+
 }
