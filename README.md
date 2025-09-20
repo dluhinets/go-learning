@@ -1,2 +1,17 @@
-# go-learning
-Go-learning
+## Вимоги
+- Go ≥ 1.24
+- Git
+
+## Швидкий старт (3–4 команди)
+```bash
+# 1) Підтягнути залежності / синхронізувати модуль
+go mod tidy
+
+# 2) Запустити додаток
+go run ./cmd/app
+
+# 3) Запустити з аргументом (приклад)
+go run ./cmd/app Dmytro
+
+# 4) Зібрати бінарник і запустити
+go build -o bin/app ./cmd/app && ./bin/app Dmytro
