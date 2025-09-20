@@ -2,13 +2,14 @@ package main
 
 import "fmt"
 
+
 func main() {
 	var name string = "Dmytro"
 	surname := "Luhinets"
 	var age int = 35
 	height := 183
 	var writeInGo bool = true
-	var result float64 = 45.34
+	var result float64 = 45.34222
 	result2 := 456.776
 
 	fmt.Printf("Name: %s\n", name)
